@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>내 캐릭터 관상 테스트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>내 캐릭터 관상 테스트</h1>
+    <div id="uploadContainer" onclick="document.getElementById('imageInput').click();">
+        <input type="file" id="imageInput" accept="image/*" style="display: none;" />
+        <div id="uploadIcon">+</div>
+        <img id="uploadedImage" src="" alt="업로드된 이미지" style="max-width: 100%; display: none;">
+    </div>
+    <div class="button-container">
+    <button id="viewResultsButton" onclick="generateCharacterTraits()">결과 보기</button>
+    </div>
+    <div id="results" style="display:none;">
+        <img id="uploadedImage" src="" alt="업로드된 이미지" style="max-width: 100%; display: none;">
+        <h2>성격</h2>
+        <span id="personality"></span>
+        <h2>좋아하는 것</h2>
+        <span id="likes"></span></h2>
+        <h2>싫어하는 것</h2>
+        <span id="dislikes"></span></h2>
+        <h2>취미</h2>
+        <span id="hobbies"></span>    
+    </div>
+    <div class="button-container">
+    <button id="redoButton" style="display: none;" onclick="redoTest()">다시하기</button>
+    <button id="shareButton" style="display: none;" onclick="copyURLToClipboard()">공유하기</button>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UhBeeSe_hyun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'UhBeeZZIBA-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/UhBeeZZIBA-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@media (max-width: 768px) {
+        .content {
+            padding: 10px;
+        }
+    
+        button {
+            font-size: 14px;
+            padding: 8px 15px;
+        }
+    }
+
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+    margin: 20px;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+
+h1 {
+    font-family: 'UhBeeZZIBA-Regular', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#results {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#results h2 {
+    font-size: 24px; /* 원하는 폰트 크기로 조정하세요 */
+    background-color: #ffea62; /* 배경색을 노란색으로 설정 */
+    padding: 12px 0;
+    font-family: 'UhBeeZZIBA-Regular', sans-serif;
+    text-align: center;
+}
+
+#uploadContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+    overflow: hidden; /* 이 부분을 추가 */
+}
+
+#uploadIcon {
+    font-size: 48px;
+    color: #000;
+    position: absolute;
+}
+
+#uploadedImage {
+    width: 100%;
+    height: 100%;
+    display: none; /* 초기 상태에서는 숨김 처리 */
+    object-fit: cover; /* 컨테이너 크기에 맞춰 이미지를 채우되, 비율을 유지 */
+    object-position: center; /* 이미지가 컨테이너의 중앙에 위치하도록 설정 */
+}
+
+#redoButton {
+    margin-top: 40px; /* 원하는 상단 여백 값으로 조정 */
+}
+
+#redoButton, #shareButton {
+    margin-top: 40px; /* 버튼과 정사각형 박스 사이의 공간 */
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'UhBeeZZIBA-Regular', sans-serif;
+    background-color: #ffea62;
+    color: rgb(50, 47, 36);
+    font-weight: bold;
+}
+
+#redoButton {
+    margin-right: 20px;
+}
+
+button {
+    margin-top: 20px; /* 버튼과 정사각형 박스 사이의 공간 */
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'UhBeeZZIBA-Regular', sans-serif;
+    background-color: #ffea62;
+    color: rgb(50, 47, 36);
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* 가로 방향으로 가운데 정렬 */
+}
+
