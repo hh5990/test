@@ -23,7 +23,6 @@
         .content {
             padding: 10px;
         }
-    
         button {
             font-size: 14px;
             padding: 8px 15px;
@@ -49,6 +48,15 @@ h1 {
     font-size: 18px;
     margin-top: 20px;
     text-align: left;
+}
+
+/* 모바일 장치를 위한 스타일 */
+@media (max-width: 768px) {
+    #results {
+        font-size: 18px; /* 모바일에서의 폰트 크기 */
+        margin-top: 10px; /* 모바일에서의 상단 여백 */
+        letter-spacing: -1px;/* 필요한 경우 여기에 더 많은 스타일 변경사항을 추가 */
+    }
 }
 
 #results h2 {
