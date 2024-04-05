@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>내 캐릭터 관상 테스트</h1>
+    <h1>내 캐릭터</h1>
+    <h1>관상 테스트</h1>
     <div id="uploadContainer" onclick="document.getElementById('imageInput').click();">
         <input type="file" id="imageInput" accept="image/*" style="display: none;" />
         <div id="uploadIcon">+</div>
@@ -18,14 +19,8 @@
     </div>
     <div id="results" style="display:none;">
         <img id="uploadedImage" src="" alt="업로드된 이미지" style="max-width: 100%; display: none;">
-        <h2>성격</h2>
-        <span id="personality"></span>
-        <h2>좋아하는 것</h2>
-        <span id="likes"></span></h2>
-        <h2>싫어하는 것</h2>
-        <span id="dislikes"></span></h2>
-        <h2>취미</h2>
-        <span id="hobbies"></span>    
+        <h2 id="typeTitle"></h2>
+        <p id="typeDescription"></p> 
     </div>
     <div class="button-container">
     <button id="redoButton" style="display: none;" onclick="redoTest()">다시하기</button>
