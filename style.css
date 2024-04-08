@@ -31,7 +31,7 @@
 
 body {
     font-family: 'Pretendard-Regular', sans-serif;
-    margin: 20px;
+    margin: 0px;
     text-align: center;
     line-height: 30px;
     padding-top: 20px;
@@ -48,11 +48,23 @@ h1 {
 #results {
     font-size: 18px;
     margin-top: 20px;
+    margin: 20px;
     text-align: left;
+}
+
+#adBanner {
+    width: 500px !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
 }
 
 /* 모바일 장치를 위한 스타일 */
 @media (max-width: 768px) {
+    #adBanner {
+        width: 100% !important; /* 모바일 화면 폭에 맞게 이미지 너비를 조정 */
+        max-width: 500px; /* 이미지의 최대 너비를 500px로 제한 */
+    }
     #results {
         font-size: 17px; /* 모바일에서의 폰트 크기 */
         margin-top: 10px; /* 모바일에서의 상단 여백 */
@@ -101,8 +113,13 @@ h1 {
     margin-top: 40px; /* 원하는 상단 여백 값으로 조정 */
 }
 
+#viewResultsButton {
+    margin-bottom: 15px;
+}
+
 #redoButton, #shareButton {
-    margin-top: 40px; /* 버튼과 정사각형 박스 사이의 공간 */
+    margin-top: 20px;
+    margin-bottom: 15px; /* 버튼과 정사각형 박스 사이의 공간 */
     cursor: pointer;
     padding: 10px 20px;
     font-size: 24px;
